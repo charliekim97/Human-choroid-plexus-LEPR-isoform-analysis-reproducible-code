@@ -1,0 +1,14 @@
+# Python (tested on Python 3.10)
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.7
+openpyxl>=3.1
+
+# External tools (install separately; not pip-installable)
+# salmon 1.10.0   — https://github.com/COMBINE-lab/salmon/releases/tag/v1.10.0  (linux x86_64 precompiled binary)
+# seqkit 2.8.2    — https://github.com/shenwei356/seqkit/releases/tag/v2.8.2
+#
+# Reference: GENCODE v44 (GRCh38.p14)
+#   transcripts: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_44/gencode.v44.transcripts.fa.gz
+#   genome (decoy): https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_44/GRCh38.primary_assembly.genome.fa.gz
+#   annotation: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_44/gencode.v44.annotation.gtf.gz
