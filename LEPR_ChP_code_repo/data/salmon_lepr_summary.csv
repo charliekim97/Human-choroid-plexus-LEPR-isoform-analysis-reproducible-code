@@ -1,6 +1,0 @@
-PRIMARY,"Wilcoxon signed-rank, LepRa-like vs LepRb-like TPM, paired, donor as unit"
-all donors (n=13),13/13 short>long,P=0.00024
-control only (n=5),5/5 short>long,P=0.062 (n=5 two-sided floor 0.0625)
-EFFECT,median 21.3x (log2FC 4.41),range 7.2-46.9x
-LepRa-like share of LEPR TPM,median 95.5%,min 87.8%
-"GROUP (robustness, not a hypothesis)","Kruskal-Wallis (n=5/4/4, low power)",frac p=0.278; gene p=0.434
