@@ -67,6 +67,10 @@ marker-gene TPM matrices, and per-sample contamination scores/flags, for both co
 - Statistics: donor-level two-sided Wilcoxon signed-rank (`scipy.stats.wilcoxon`, exact);
   contamination control by Spearman correlation.
 
+## Reproduce via isoform-dominance
+pip install -r requirements.txt
+python reproduce.py
+
 ## Citation
 
 If you use this code, please cite the associated manuscript (details to be added on publication).
