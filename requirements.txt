@@ -1,3 +1,3 @@
 # The analysis is performed by the published isoform-dominance package.
 # Pin the exact version used for the figures in the paper.
-isoform-dominance==2.1.0
+isoform-dominance==2.1.1
