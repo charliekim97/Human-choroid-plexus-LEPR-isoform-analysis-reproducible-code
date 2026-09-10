@@ -68,8 +68,35 @@ marker-gene TPM matrices, and per-sample contamination scores/flags, for both co
   contamination control by Spearman correlation.
 
 ## Reproduce via isoform-dominance
+
+The analysis engine is the `isoform-dominance` package, **version 2.1.1** — the version
+named in the manuscript's Code Availability statement and archived at
+[10.5281/zenodo.20738150](https://doi.org/10.5281/zenodo.20738150). `requirements.txt`
+pins that exact version. Later releases of the package do not alter that archive.
+
+```bash
 pip install -r requirements.txt
 python reproduce.py
+```
+
+Expected output:
+
+```
+Reproduced with isoform-dominance:
+  GSE228458    n=5  5/5 short>long  fold=25.9x  P=0.0625
+  GSE137619    n=6  6/6 short>long  fold=37.7x  P=0.03125
+  COMBINED     n=11  11/11  fold=32.3x  P=0.0009766
+```
+
+That output and the per-donor tables written to `results/` are byte-identical on package
+versions 2.1.0, 2.1.1 and 2.2.0. Version 2.2.0 adds columns to
+`results/lepr_dominance_stats.csv` — a bootstrap fold-change interval, the exact test's
+resolution floor, and two cohort combinations that respect the cohort factor — without
+changing any value that 2.1.1 already reported.
+
+The manuscript reports the two cohorts separately as discovery and replication; the
+`COMBINED` line above pools donors across them and is this repository's own summary,
+not a figure in the paper.
 
 ## Citation
 
